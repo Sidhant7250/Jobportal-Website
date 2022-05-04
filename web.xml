@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    
+    <filter>
+        <filter-name>filterdemo</filter-name>
+        <filter-class>backend.ValidationFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>filterdemo</filter-name>
+        <url-pattern>/reg</url-pattern>
+    </filter-mapping>
+    
+    <servlet>
+        <servlet-name>regdemo</servlet-name>
+        <servlet-class>backend.Register</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>regdemo</servlet-name>
+        <url-pattern>/reg</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>logdemo</servlet-name>
+        <servlet-class>backend.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logdemo</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>logoutdemo</servlet-name>
+        <servlet-class>backend.Logout</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logoutdemo</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>editdemo</servlet-name>
+        <servlet-class>backend.EditProfileAbout</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>editdemo</servlet-name>
+        <url-pattern>/editProfileAbout</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>addedudemo</servlet-name>
+        <servlet-class>backend.AddEductionDetails</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addedudemo</servlet-name>
+        <url-pattern>/addeducationdetails</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>editeducation</servlet-name>
+        <servlet-class>backend.EditEducationDetails</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>editeducation</servlet-name>
+        <url-pattern>/editeducationdetails</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>deletedemo</servlet-name>
+        <servlet-class>backend.DeleteEducationDetails</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deletedemo</servlet-name>
+        <url-pattern>/deleteducationdetails</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>experincedemo</servlet-name>
+        <servlet-class>backend.AddExperienceDetails</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>experincedemo</servlet-name>
+        <url-pattern>/addexperiencedetails</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>updateexperience</servlet-name>
+        <servlet-class>backend.UpdateExperienceDetails</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateexperience</servlet-name>
+        <url-pattern>/updatexperiencedetails</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>deleteexperience</servlet-name>
+        <servlet-class>backend.DeleteExperienceDetails</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteexperience</servlet-name>
+        <url-pattern>/deleteexperiencedetails</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>picture</servlet-name>
+        <servlet-class>backend.UdateProfilePic</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>picture</servlet-name>
+        <url-pattern>/editProfilepicture</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>uploadresumedemo</servlet-name>
+        <servlet-class>backend.UpdateResume</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>uploadresumedemo</servlet-name>
+        <url-pattern>/UpdateResume</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>downloadresumedemo</servlet-name>
+        <servlet-class>backend.DownloadResume</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>downloadresumedemo</servlet-name>
+        <url-pattern>/downloadresume</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>resumebuilder</servlet-name>
+        <servlet-class>backend.Resumebuilder</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>resumebuilder</servlet-name>
+        <url-pattern>/resumebuilderform</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>resumebuilderr</servlet-name>
+        <servlet-class>backend.DownloadResumeBuilder</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>resumebuilderr</servlet-name>
+        <url-pattern>/downloadresumebuilder</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>applayjob</servlet-name>
+        <servlet-class>backend.ApplyForJobs</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>applayjob</servlet-name>
+        <url-pattern>/applyforjob</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>deleteappliedjobs</servlet-name>
+        <servlet-class>backend.DeleteMyJobAppilication</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteappliedjobs</servlet-name>
+        <url-pattern>/DeleteMyJobAppilication</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>jobsearch</servlet-name>
+        <servlet-class>backend.JobSearchByTechnology</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>jobsearch</servlet-name>
+        <url-pattern>/JobSearchByTechnology</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>serchbylocation</servlet-name>
+        <servlet-class>backend.JobSerchByLocation</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>serchbylocation</servlet-name>
+        <url-pattern>/JobSearchByLocation</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>getuserdatademo</servlet-name>
+        <servlet-class>backend.GetUserData</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getuserdatademo</servlet-name>
+        <url-pattern>/GetUserData</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+         <servlet-name>cookiecheckdemo</servlet-name>
+         <servlet-class>backend.CheckCookie</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cookiecheckdemo</servlet-name>
+        <url-pattern>/CheckCookie</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>contactusdemo</servlet-name>
+        <servlet-class>backend.ContactUs</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>contactusdemo</servlet-name>
+        <url-pattern>/contactus</url-pattern>
+    </servlet-mapping>
+</web-app>
